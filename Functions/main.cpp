@@ -16,14 +16,12 @@ void main()
 	int n;//Объявляем переменную n 
 	int d, e;
 	cout << "Введите два числа:"; cin >> a >> b;
-	cout << "Введите число для вычисления факториала:"; cin >> n;
-	cout << "Введите основание степени:"; cin >> d;
-	cout << "Введите показатель степени:"; cin >> e;
 	int c = Add(a, b);// Использование функции
 	cout << a << "+" << b << "=" << c << endl;
 	cout << a << "-" << b << "=" << Sub(a, b) << endl;
 	cout << a << "*" << b << "=" << Mul(a, b) << endl;
 	cout << a << "/" << b << "=" << Div(a, b) << endl;
+	cout << "Введите число для вычисления факториала:"; cin >> n;
 	if (n >= 0)
 	{
 		cout << Fact(n);
@@ -33,6 +31,8 @@ void main()
 		cout << "Error:n<0";
 	}
 	cout << endl;
+	cout << "Введите основание степени:"; cin >> d;
+	cout << "Введите показатель степени:"; cin >> e;
 	cout << d << "в степени" << e << "=" << Power(d, e) << endl;
 
 }
@@ -77,9 +77,3 @@ int Power(int d, int e)
 	}
 	return N;
 }
-
-
-
-
-
-
